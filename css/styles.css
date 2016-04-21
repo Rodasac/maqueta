@@ -313,8 +313,9 @@ figure > .img2 {
 ******************************************************************************/
 
 .servicios {
-    margin: 5rem 0 3rem -2rem;
-    width: 100vw;
+    margin: 5rem 0 3rem 0;
+    padding: 0 !important;
+    width: 100%;
     height: 100vh;
     text-align: center;
 }
@@ -325,8 +326,11 @@ figure > .img2 {
     margin: 0 0 5rem 0;
 }
 
+/* Diseño */
 .diseño {
     color: #eee;
+    padding: 0;
+    margin: 0;
     display: table-cell;
     vertical-align: middle;
     height: 100vh;
@@ -338,6 +342,25 @@ figure > .img2 {
     background-repeat: no-repeat;
 }
 
+/* Desarrollo */
+
+.desarrollo {
+    color: #222831;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 50vw;
+    background-image: url("../img/ola_oscura.png");
+    background-color: #F2FFB2;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size:  50vw;
+}
+
+/* General */
+
 .dTitulo {
     font-family: 'Open Sans', sans-serif;
 }
@@ -346,5 +369,5 @@ figure > .img2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8rem;
     font-weight: 300;
-    margin: 7rem 5rem 4rem 5rem;
+    margin: 7rem 5rem 15rem 5rem;
 }
