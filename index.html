@@ -3,23 +3,24 @@
     <head>
         <meta charset="utf-8">
         <title>LiberArte - Diseño Web y Tecnologías Libres</title>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic|Lobster+Two:400,700,400italic,700italic'
-         rel='stylesheet' type='text/css'>
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic|Lobster+Two:400,700,400italic,700italic"
+         rel="stylesheet" type="text/css">-->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/jquery-ui.css">
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <div class="dotsnav">
             <div class="dotstyle dotstyle-fillup">
             	<ul id="dotsa">
-            		<li class="current"><a title="Inicio" href="#">Inicio</a></li>
-            		<li><a title="Nosotros" href="#quienes">Nosotros</a></li>
-            		<li><a title="Servicios" href="#">Servicios</a></li>
-            		<li><a title="Tecnologías" href="#">Tecnologías</a></li>
-            		<li><a title="Contacto" href="#">Contacto</a></li>
+            		<li id="nHome"><a title="Inicio" href="#">Inicio</a></li>
+            		<li id="nWe"><a title="Nosotros" href="#quienes">Nosotros</a></li>
+            		<li id="nServi"><a title="Servicios" href="#servi">Servicios</a></li>
+            		<li id="nTech"><a title="Tecnologías" href="#">Tecnologías</a></li>
+            		<li id="nCont"><a title="Contacto" href="#">Contacto</a></li>
             	</ul>
             </div>
         </div>
@@ -51,7 +52,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="presentacion">
+                    <div id="present" class="presentacion">
                         <div class="pensamiento">
                             <div class="container-fluid">
                                 <div class="row">
@@ -93,44 +94,52 @@
                         <div class="row">
                             <div class="col-lg-offset-2 col-md-offset-2 col-lg-8
                             col-md-8 col-sm-8 col-xs-8">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                        <figure>
-                                            <img src="img/magde.png" alt="..." class="img-responsive img-rounded">
-                                            <figcaption class="qCap">@Magde</figcaption>
-                                        </figure>
+                                <div class="animated">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <figure>
+                                                <img id="magde" src="img/magde.png" width="100%" alt="..." class="img1 animated img-responsive img-circle">
+                                                <img src="img/magde2.jpg" width="100%" alt="..." class="img2 hidden animated img-responsive img-circle">
+                                                <figcaption class="qCap">@Magde</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <figure>
+                                                <img src="img/alirio.png" width="100%" alt="..." class="img1 animated img-responsive img-circle">
+                                                <img src="img/alirio2.jpg" width="100%" alt="..." class="img2 hidden animated img-responsive img-circle">
+                                                <figcaption class="qCap">@Alirio</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <figure>
+                                                <img src="img/francisco.png" width="100%" alt="..." class="img1 animated img-responsive img-circle">
+                                                <img src="img/magde2.jpg" width="100%" alt="..." class="img2 hidden animated img-responsive img-circle">
+                                                <figcaption class="qCap">@Francisco</figcaption>
+                                            </figure>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                        <figure>
-                                            <img src="img/alirio.png" alt="..." class="img-responsive img-rounded">
-                                            <figcaption class="qCap">@Alirio</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                        <figure>
-                                            <img src="img/francisco.png" alt="..." class="img-responsive img-rounded">
-                                            <figcaption class="qCap">@Francisco</figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                        <figure>
-                                            <img src="img/adolfo.png" alt="..." class="img-responsive img-rounded">
-                                            <figcaption class="qCap">@Adolfo</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                        <figure>
-                                            <img src="img/douglas.png" alt="..." class="img-responsive img-rounded">
-                                            <figcaption class="qCap">@Douglas</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                        <figure>
-                                            <img src="img/otros.png" alt="..." class="img-responsive img-rounded">
-                                            <figcaption class="qCap">@Otros</figcaption>
-                                        </figure>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <figure>
+                                                <img src="img/adolfo.png" width="100%" alt="..." class="img1 animated img-responsive img-circle">
+                                                <img src="img/adolfo2.jpg" width="100%" alt="..." class="img2 hidden animated img-responsive img-circle">
+                                                <figcaption class="qCap">@Adolfo</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <figure>
+                                                <img src="img/douglas.png" width="100%" alt="..." class="img1 animated img-responsive img-circle">
+                                                <img src="img/magde2.jpg" width="100%" alt="..." class="img2 hidden animated img-responsive img-circle">
+                                                <figcaption class="qCap">@Douglas</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <figure>
+                                                <img src="img/otros.png" width="100%" alt="..." class="img1 animated img-responsive img-circle">
+                                                <img src="img/magde2.jpg" width="100%" alt="..." class="img2 hidden animated img-responsive img-circle">
+                                                <figcaption class="qCap">@Otros</figcaption>
+                                            </figure>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -139,17 +148,40 @@
                 </div>
                 <hr class="separator">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="habilidades">
+                    <div class="servicios" id="servi">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h1 class="sHead">Servicios</h1>
+                            </div>
+                        </div>
                        <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                 <div class="diseño">
+                                    <img class="imgD" src="img/diseño.svg" width="40%"/>
                                     <h1 class="dTitulo">Diseño Web</h1>
+                                    <p id="dText" class="dTexto hidden animated zoomOutDown">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                        Vivamus posuere, ante eu tempor dictum,
+                                        felis nibh facilisis sem, eu auctor metus nulla non lorem.
+                                        Morbi turpis arcu, egestas congue, condimentum quis,
+                                        tristique cursus, leo. 
+                                        Aliquam vel nibh.
+
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                        Vivamus posuere, ante eu tempor dictum,
+                                        felis nibh facilisis sem, eu auctor metus nulla non lorem.
+                                    </p>
                                 </div>
                             </div>
                        </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="tech"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="contacto"></div>
+                </div>
             </div>
         </div>
         <script src="js/jquery-2.1.4.min.js" charset="utf-8"></script>
@@ -169,6 +201,58 @@
 					}
 				} );
 			} );
+            $("div").mouseover(function(e){
+                console.log(e.currentTarget.id);
+                if(e.currentTarget.id == "present" || e.currentTarget.id == "quienes" || e.currentTarget.id == "servi"
+                    || e.currentTarget.id == "tech" || e.currentTarget.id == "contacto") {
+                    if(e.currentTarget.id == "present"){
+                        $("#nHome").siblings("li").removeClass("current");
+                        $("#nHome").addClass("current");
+                    }
+                    else if(e.currentTarget.id == "quienes"){
+                        $("#nWe").siblings("li").removeClass("current");
+                        $("#nWe").addClass("current");
+                    }
+                    else if(e.currentTarget.id == "servi"){
+                        $("#nServi").siblings("li").removeClass("current");
+                        $("#nServi").addClass("current");
+                    }
+                    else if(e.currentTarget.id == "tech"){
+                        $("#nTech").siblings("li").removeClass("current");
+                        $("#nTech").addClass("current");
+                    }
+                    else if(e.currentTarget.id == "contacto"){
+                        $("#nCont").siblings("li").removeClass("current");
+                        $("#nCont").addClass("current");
+                    }
+                }
+            });
+            $(".diseño").hover(function(e){
+                $("#dText").removeClass("hidden zoomOutDown");
+                $("#dText").addClass("zoomInUp");
+            },function(e){
+                $("#dText").removeClass("zoomInUp");
+                $("#dText").addClass("zoomOutDown", 1000, "easeInBack");
+                $("#dText").addClass("hidden", 1000);
+            });
+            
+            $(".img1").click(function(e){
+                console.log(e.currentTarget.id);
+                $(e.currentTarget).removeClass("bounceIn");
+                $(e.currentTarget).siblings(".img2").removeClass("zoomOut");
+                $(e.currentTarget).addClass("zoomOut");
+                setTimeout(function(){$(e.currentTarget).addClass("hidden")}, 1000);
+                setTimeout(function(){$(e.currentTarget).siblings(".img2").removeClass("hidden")}, 1000);
+                $(e.currentTarget).siblings(".img2").addClass("bounceIn");
+            });
+            $(".img2").click(function(e){
+                $(e.currentTarget).removeClass("bounceIn");
+                $(e.currentTarget).siblings(".img1").removeClass("zoomOut");
+                $(e.currentTarget).addClass("zoomOut");
+                setTimeout(function(){$(e.currentTarget).addClass("hidden")}, 1000);
+                setTimeout(function(){$(e.currentTarget).siblings(".img1").removeClass("hidden")}, 1000);
+                $(e.currentTarget).siblings(".img1").addClass("bounceIn");
+            });
 		</script>
     </body>
 </html>

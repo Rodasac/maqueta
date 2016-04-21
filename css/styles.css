@@ -151,7 +151,7 @@ hr {
     }
 
     .barra-nav-all .navegacion li a {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         font-weight: 300;
         color: #eee;
         text-decoration: none;
@@ -184,7 +184,7 @@ hr {
     }
 
     .barra-nav-all .navegacion li a {
-        font-size: 2.4rem;
+        font-size: 1.7rem;
         font-weight: 300;
         color: #eee;
         text-decoration: none;
@@ -217,7 +217,7 @@ hr {
     }
 
     .barra-nav-all .navegacion li a {
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 300;
         color: #eee;
         text-decoration: none;
@@ -288,6 +288,16 @@ figure {
     padding-top: 3rem;
 }
 
+figure > .img1 {
+    position: relative;
+    clear: both;
+}
+figure > .img2 {
+    position: relative;
+    clear: both;
+    background-size: cover;
+}
+
 .qImg {
     text-align: center;
 }
@@ -302,11 +312,17 @@ figure {
 ********************************* Habilidades *********************************
 ******************************************************************************/
 
-.habilidades {
+.servicios {
     margin: 5rem 0 3rem -2rem;
     width: 100vw;
     height: 100vh;
     text-align: center;
+}
+
+.sHead {
+    font-family: "Lobster Two", cursive;
+    font-size: 6rem;
+    margin: 0 0 5rem 0;
 }
 
 .diseño {
@@ -320,4 +336,15 @@ figure {
     background-size:  50vw;
     background-position: left bottom;
     background-repeat: no-repeat;
+}
+
+.dTitulo {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dTexto {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 7rem 5rem 4rem 5rem;
 }
