@@ -60,7 +60,7 @@ $(document).ready(function () {
             /* Quienes Somos */
             
             
-            $(".img1").click(function(e){
+            $(".img1").mouseover(function(e){
                 console.log(e.currentTarget.id);
                 $(e.currentTarget).removeClass("bounceIn");
                 $(e.currentTarget).siblings(".img2").removeClass("zoomOut");
@@ -69,7 +69,7 @@ $(document).ready(function () {
                 setTimeout(function(){$(e.currentTarget).siblings(".img2").removeClass("hidden");}, 1000);
                 $(e.currentTarget).siblings(".img2").addClass("bounceIn");
             });
-            $(".img2").click(function(e){
+            $(".img2").mouseleave(function(e){
                 $(e.currentTarget).removeClass("bounceIn");
                 $(e.currentTarget).siblings(".img1").removeClass("zoomOut");
                 $(e.currentTarget).addClass("zoomOut");
@@ -86,7 +86,7 @@ $(document).ready(function () {
                 $("#dText").addClass("zoomInUp");
             },function(e){
                 $("#dText").removeClass("zoomInUp");
-                $("#dText").addClass("zoomOutDown", 1000, "easeInBack");
+                $("#dText").addClass("zoomOutDown");
                 $("#dText").addClass("hidden", 1000);
             });
             
@@ -96,8 +96,49 @@ $(document).ready(function () {
                 $("#dvText").addClass("zoomInUp");
             },function(e){
                 $("#dvText").removeClass("zoomInUp");
-                $("#dvText").addClass("zoomOutDown", 1000, "easeInBack");
+                $("#dvText").addClass("zoomOutDown");
                 $("#dvText").addClass("hidden", 1000);
             });
             
+            /* Tecnologías */
+            
+             $("#web").hover(function(e){
+                $("#twText").removeClass("hidden zoomOutDown");
+                $("#imgsBig1").removeClass("#imgsBig1").addClass("#imgsSmall1");
+                $("#imgsBig1 img").removeClass("imgTechBig").addClass("imgTechSmall");
+                $("#twText").addClass("zoomInUp");
+            },function(e){
+                $("#twText").removeClass("zoomInUp");
+                $("#imgsSmall1").removeClass("#imgsSmall1").addClass("#imgsBig1");
+                $("#imgsBig1 img").removeClass("imgTechSmall").addClass("imgTechBig");
+                $("#twText").addClass("zoomOutDown");
+                $("#twText").addClass("hidden", 1000);
+            });
+            
+            
+            $("#prog").hover(function(e){
+                $("#tpText").removeClass("hidden zoomOutDown");
+                $("#imgsBig2").removeClass("#imgsBig2").addClass("#imgsSmall2");
+                $("#imgsBig2 img").removeClass("imgTechBig").addClass("imgTechSmall");
+                $("#tpText").addClass("zoomInUp");
+            },function(e){
+                $("#tpText").removeClass("zoomInUp");
+                $("#imgsSmall2").removeClass("#imgsSmall2").addClass("#imgsBig2");
+                $("#imgsBig2 img").removeClass("imgTechSmall").addClass("imgTechBig");
+                $("#tpText").addClass("zoomOutDown");
+                $("#tpText").addClass("hidden", 1000);
+            });
+            
+            $("#sis").hover(function(e){
+                $("#tsText").removeClass("hidden zoomOutDown");
+                $("#imgsBig3").removeClass("#imgsBig3").addClass("#imgsSmall3");
+                $("#imgsBig3 img").removeClass("imgTechBig").addClass("imgTechSmall");
+                $("#tsText").addClass("zoomInUp");
+            },function(e){
+                $("#tsText").removeClass("zoomInUp");
+                $("#imgsSmall3").removeClass("#imgsSmall3").addClass("#imgsBig3");
+                $("#imgsBig3 img").removeClass("imgTechSmall").addClass("imgTechBig");
+                $("#tsText").addClass("zoomOutDown");
+                $("#tsText").addClass("hidden", 1000);
+            });
             
