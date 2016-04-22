@@ -23,8 +23,11 @@ $(document).ready(function () {
 				new DotNav( nav, {
 					callback : function( idx ) {
 						var c = document.getElementById("dotsa").children;
-                        var url = c[idx].children[0].href;
-                        window.location = url;
+                        var elem = c[idx].children[0];
+                        var urlID = $(elem).attr('href');
+                        $('html, body').animate({
+                            scrollTop: $(urlID).offset().top -100
+                        }, 2000);
 					}
 				} );
 			} );

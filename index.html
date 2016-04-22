@@ -13,28 +13,60 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal fade" id="cFModal" tabindex="-1" role="dialog" aria-labelledby="...">
             <div class="modal-dialog">
                 <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Modal title</h4>
+                    <h4 class="modal-title">¡Ponte en contacto con nosotros!</h4>
                 </div>
                 <div class="modal-body">
-                    <p>One fine body&hellip;</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="emailC">Tu correo electrónico:</label>
+                            <input type="email" class="form-control" id="emailC" placeholder="Ej: correo@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">Nombre completo:</label>
+                            <input type="text" class="form-control" id="pass" placeholder="Escribe tu nombre aquí">
+                        </div>
+                        <div class="form-group">
+                            <label for="msj">File input</label>
+                            <textarea class="form-control" rows="3" id="msj" placeholder="Escribe tu mensaje aquí"></textarea>
+                        </div>
+                        <div class="radio">
+                            <p class="help-block">Tipo de mensaje</p>
+                            <label>
+                            <input type="radio" name="tipo"> Proyecto
+                            </label>
+                            
+                            <label>
+                            <input type="radio" name="tipo"> Consulta
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <p class="help-block">¿Nos contacta desde Venezuela?</p>
+                            <label>
+                            <input type="radio" name="ve"> No
+                            </label>
+                            <label>
+                            <input type="radio" name="ve"> No
+                            </label>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button id="cFormB" type="button" class="btn btn-primary">Enviar Mensaje</button>
                 </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        <div class="container-fluid">
+        <div id="Home" class="container-fluid">
             <div class="dotsnav">
                 <div class="dotstyle dotstyle-fillup">
                     <ul id="dotsa">
-                        <li id="nHome"><a title="Inicio" href="#">Inicio</a></li>
+                        <li id="nHome"><a title="Inicio" href="#Home">Inicio</a></li>
                         <li id="nWe"><a title="Nosotros" href="#quienes">Nosotros</a></li>
                         <li id="nServi"><a title="Servicios" href="#servi">Servicios</a></li>
                         <li id="nTech"><a title="Tecnologías" href="#tech">Tecnologías</a></li>
@@ -359,7 +391,7 @@
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                             <div class="fMForm">
-                                <button class="btn btn-warning btn-lg pull-left" data-toggle="modal" data-target="#myModal">Contacto</button>
+                                <button class="btn btn-warning btn-lg pull-left" data-toggle="modal" data-target="#cFModal">Contacto</button>
                             </div>
                         </div>
                     </div>
