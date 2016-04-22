@@ -96,10 +96,10 @@ hr {
         color: #eee;
     }
     .barra-nav .brand-group .brand-title small {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     .barra-nav-all .brand-group .brand-title small {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -125,10 +125,10 @@ hr {
         color: #eee;
     }
     .barra-nav .brand-group .brand-title small {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     .barra-nav-all .brand-group .brand-title small {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -152,6 +152,12 @@ hr {
     .barra-nav-all .brand-group .brand-title {
         font-family: 'Lobster Two', cursive !important;
         color: #eee;
+    }
+    .barra-nav .brand-group .brand-title small {
+        font-size: 2rem;
+    }
+    .barra-nav-all .brand-group .brand-title small {
+        font-size: 2rem;
     }
 }
 
